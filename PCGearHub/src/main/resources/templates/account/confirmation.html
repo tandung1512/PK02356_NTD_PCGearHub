@@ -1,0 +1,79 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+th:replace="~{/layouts/layout :: dynamic(~{::body})}">
+
+<head>
+    <title>Xác thực Email</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main class="d-flex justify-content-center mt-2" style="height: 700px; margin-top: 40px;">
+      
+        <form class="form">
+            <h1 class="text-center" style="text-align: center;font-weight: bold;font-size: 30px;color: black;"> XÁC NHẬN EMAIL</h1>
+            <H6 class="text-center text-secondary" style="text-align: center;color: rgb(125, 125, 125);" >
+                Nhập địa chỉ email của bạn và chúng tôi sẽ gửi cho bạn một email có hướng dẫn để đặt lại mật khẩu của bạn.
+            </H6>
+            <div class="flex-column">
+                <label>Email </label>
+            </div>
+            <div class="inputForm"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 32 32" height="20">
+                    <g data-name="Layer 3" id="Layer_3">
+                        <path
+                            d="m30.853 13.87a15 15 0 0 0 -29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0 -1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1 -4.158-.759v-10.856a1 1 0 0 0 -2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zm-14.853 8.13a6 6 0 1 1 6-6 6.006 6.006 0 0 1 -6 6z">
+                        </path>
+                    </g>
+                </svg>
+                <input placeholder="Nhập Email" class="input" type="text">
+            </div>
+
+          
+              
+
+          
+            <a class="btn-login" th:href="@{/pcgearhub/forgot-password}">Xác nhận</a>
+            <p class="p">Không muốn thay đổi? <a class="span" th:href="@{/pcgearhub/login}">Đăng nhập</a>
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <link rel="stylesheet" th:href="@{/assets/css/login.css}">
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+        <script>
+    // Lấy URL trang hiện tại
+    var currentPage = window.location.pathname;
+  
+    // Lấy phần tử <div>
+    var divElement = document.querySelector('.nav-category-home');
+  
+    // Xóa lớp 'hello' nếu trang hiện tại không phải trang index
+    if (currentPage !== '/') {
+        divElement.classList.remove('hello');
+    }
+  
+  </script>
+</body>
+
+</html>
