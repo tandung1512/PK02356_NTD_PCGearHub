@@ -4,7 +4,7 @@
 	<div
 		class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
 		<a class="sidebar-brand brand-logo" href="index.html"><img
-			th:src="@{/admin/images/logo.svg}" alt="logo" /></a> <a
+			th:src="@{/assets/images/logo/logo.jpg}" alt="logo" /></a> <a
 			class="sidebar-brand brand-logo-mini" href="index.html"></a>
 	</div>
 	<ul class="nav">
@@ -16,7 +16,7 @@
 					</div>
 					<div class="profile-name">
 						<h5 class="mb-0 font-weight-normal">{{info.name}}</h5>
-						<span>admin</span>
+						<span>Admin</span>
 					</div>
 				</div>
 				<a href="#" id="profile-dropdown" data-toggle="dropdown"><i
@@ -187,7 +187,7 @@
 							liệu</a></li>
 				</ul>
 			</div></li>
-		<li class="nav-item menu-items"><a class="nav-link"
+		<!--  <li class="nav-item menu-items"><a class="nav-link"
 			data-toggle="collapse" href="#ui-thongke" aria-expanded="false"
 			aria-controls="ui-thongke"> <span class="menu-icon"> <i
 					class="mdi mdi-file-document-box"></i>
@@ -209,11 +209,12 @@
 					<i class="mdi mdi-table-large"></i>
 			</span> <span class="menu-title">Tables</span>
 		</a></li> -->
-		<li class="nav-item menu-items"><a class="nav-link"
+		 <!--<li class="nav-item menu-items"><a class="nav-link"
 			th:href="@{/pcgearhub/admin/chart}"> <span class="menu-icon">
 					<i class="mdi mdi-chart-bar"></i>
 			</span> <span class="menu-title">Biểu đồ thống kê</span>
-		</a></li>
+		</a></li>-->
+		
 		<!-- <li class="nav-item menu-items"><a class="nav-link"
 			href="pages/icons/mdi.html"> <span class="menu-icon"> <i
 					class="mdi mdi-contacts"></i>
@@ -246,6 +247,7 @@
 				<span class="menu-icon"> <i class="mdi mdi-file-document-box"></i>
 			</span> <span class="menu-title">Documentation</span>
 		</a></li> -->
+		
 	</ul>
 	<script
 		th:src="@{https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js}"></script>
